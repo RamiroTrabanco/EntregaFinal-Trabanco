@@ -1,0 +1,73 @@
+.cartTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.btnEmptyCart {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+.itemCard {
+    display: flex;
+    width: 50%;
+    margin-top: 5%;
+}
+
+.cartContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    width: 100%;
+}
+
+.titleItemCart {
+    padding-top: 8%;
+    padding-left: 10px;
+    width: 25%;
+}
+
+.imgItemCart {
+    width: 20%;
+    height: 20vh;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.priceItemCart {
+    margin-top: 8%;
+    margin-left: 20px;
+    width: 6.5%;
+}
+
+.subItemCart {
+    margin-left: 12%;
+    margin-top: 8%;
+    width: 13%;
+}
+
+.btnAddItem {
+    margin-left: 16%;
+    margin-right: 56%;
+}
+
+.btnDeleteItem {
+    width: 2%;
+    height: 2.5%;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+.totalOrder {
+    display: flex;
+    flex-direction: row;
+}
+
+.totalPriceOrder{
+    margin-left: 30%;
+    margin-right: 37%;
+}

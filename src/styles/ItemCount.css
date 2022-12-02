@@ -1,0 +1,19 @@
+.containerItemCount {
+    display: flex;
+    justify-content: center;
+}
+
+.btnItemCount {
+    margin: 10px
+}
+
+.cantItem {
+    display: flex;
+    margin: 10px;
+    padding-top: 5px;
+}
+
+.btnAddToCart { 
+    margin-top: 10px;
+    font-size: 12px;
+}
