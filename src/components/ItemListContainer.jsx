@@ -1,7 +1,8 @@
 import ItemList from './ItemList'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { collection, getDocs, query, where } from "firebase/firestore"
+import { collection, getDocs, query, where, doc } from "firebase/firestore"
+import { firestoreFetch } from '../utils/firebaseFetch'
 import { db } from '../utils/firebaseConfig'
 
 function ItemListContainer () {
@@ -12,9 +13,9 @@ function ItemListContainer () {
         async function fetchData(){
         let querySnapshot
         if (idCategory) {
-        let querySnapshot = await getDocs(query(collection(db, "prods"),where("category","==",idCategory)))}
+        querySnapshot = await getDocs(query(collection(db, "prods"),where("category","==",idCategory)))}
         else {
-        let querySnapshot = await getDocs(collection(db, "prods"))
+        querySnapshot = await getDocs(collection(db, "prods"))
         };
 
         const dataFromFirestore = querySnapshot.docs.map(item => ({
